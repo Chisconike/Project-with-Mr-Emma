@@ -1,0 +1,414 @@
+/* =============== Defaults ===================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(222, 221, 221);
+}
+
+/* =================== Nav ====================== */
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 80px;
+    height: 50px;
+}
+
+nav ul button {
+    margin-right: 20px;
+    background-color: #cfd7defb;
+    padding: 3px;
+    width: 100px;
+    border: none;
+    font-weight: 900;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+nav ul li.click {
+    display: none;
+}
+
+/* =================== Section1 ================ */
+
+div.section1 {
+    background-image: url(gabriel-gonzalez-LCqbUcMUO0c-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+
+}
+
+.section1 div {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section1 div button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #cfd7ded7;
+    font-weight: 900;
+}
+
+.section1 div h3,
+.section1 div p {
+    padding: 30px;
+}
+
+.section1 div h1 {
+    padding: 5px;
+}
+
+/* ================= Section2 ================== */
+div.section2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section2 div {
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+}
+
+.section2_first {
+    border-right: 1px solid black;
+
+}
+
+.section2_first p.section2text {
+    font-weight: 900;
+}
+
+.section2_first p,
+.section2_first h2 {
+    padding: 10px;
+}
+
+.section2_second p {
+    padding: 10px;
+}
+
+.section2_second button {
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+}
+
+/* ======================= Section3 ================ */
+
+div.section3 {
+    background-image: url(wes-hicks-4-EeTnaC1S4-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.section3 img {
+    width: 250px;
+    height: 350px;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    top: 70px;
+    left: 150px;
+    z-index: 1;
+}
+
+#blog {
+    background-color: white;
+    width: 80%;
+    position: relative;
+    z-index: 0;
+}
+
+.section3 div p,
+.section3 div h2 {
+    margin: auto;
+    padding: 10px;
+    width: 600px;
+}
+
+.section3 div p.section3top {
+    padding-top: 100px;
+    font-weight: 900;
+    font-size: large;
+    text-align: center;
+}
+
+.section3 div button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #cfd7ded7;
+    font-weight: 900;
+    text-align: right;
+}
+
+/* ================= Section4 ==================== */
+.section4_first {
+    text-align: center;
+    padding: 20px;
+}
+
+.section4 {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px;
+}
+
+.section4_second {
+    width: 30%;
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+
+.last {
+    border: none;
+}
+
+
+.section4_second h2 {
+    padding: 20px;
+}
+
+.section4_second button {
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+}
+
+/* =================== Footer =================== */
+
+footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 200px; */
+    align-items: center;
+    padding-top: 100px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer p {
+    padding: 20px;
+    text-align: center;
+}
+
+/* ======================== Mobile ================== */
+@media (max-width: 900px) {
+
+    /* ===================== Nav ================== */
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    nav ul li,
+    nav ul button {
+        display: none;
+    }
+
+    nav ul li.click {
+        display: block;
+        padding-right: 20px;
+    }
+
+    /* ==================== Section1 ============= */
+    .section1 div h3,
+    .section1 div p {
+        padding: 20px;
+
+    }
+
+    .section1 div {
+        width: 80%;
+        font-size: small;
+    }
+
+    .section1 div h1 {
+        padding: 10px;
+    }
+
+    /* ================= Section2 =============== */
+
+    div.section2 {
+        flex-direction: column;
+    }
+
+    .section2 div {
+        width: 100%;
+        font-size: small;
+        border-top: 1px solid;
+    }
+
+    .section2_first {
+        border: none;
+    }
+
+    /* =================== Section3 =============== */
+
+    div.section3 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section3 img {
+        /* padding-top: 20px;
+        width: 200px;
+        height: 200px;
+        padding-bottom: 20px; */
+        display: none;
+    }
+
+
+    .section3 div {
+        background-color: white;
+        width: 90%;
+        font-size: small;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .section3 div p.section3top {
+        padding: 15px;
+        font-weight: 900;
+        font-size: large;
+        text-align: center;
+    }
+
+    .section3 div p,
+    .section3 div h2 {
+        padding: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+    }
+
+    .section3 div button {
+        text-align: center;
+    }
+
+    /* ================ Section4 ================= */
+
+    .section4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section4_second {
+        width: 90%;
+        border-top: 1px solid;
+        border-right: none;
+
+    }
+
+    /* =================== Footer ============== */
+
+    footer ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    footer ul li {
+        padding: 5px;
+        /* padding-top: 0;
+        margin-top: 0; */
+    }
+
+    footer p {
+        padding: 0 50px 20px 0;
+        text-align: right;
+    }
+
+
+
+    /* ====================== JavaScript =============== */
+    nav.navb.menu ul li.click {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+    }
+
+    nav.navb.menu ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    nav.navb.menu ul li {
+        display: flex;
+    }
+
+    nav.navb.menu ul li a {
+        display: block;
+        padding: 5px;
+    }
+
+    nav.navb.menu img {
+        display: none;
+    }
+
+    nav.navb.menu button {
+        display: block;
+        margin: auto;
+        font-weight: 900;
+    }
+
+
+}
