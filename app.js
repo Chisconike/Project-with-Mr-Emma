@@ -15,3 +15,14 @@ navclick.addEventListener('click', (onclick) => {
 //         window.open('https://github.com/Chisconike/Microverse-Emma-Shaib.git')
 //     }
 // }
+
+// const btn1 = document.querySelector('#hello');
+// btn1.addEventListener('click', () => {
+//     console.log('hello')
+// })
+
+
+// const btn2 = document.getElementById('goodbye');
+// btn2.addEventListener('click', function () {
+//     console.log('goodbye')
+// })
